@@ -1,15 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import VendingMachine from './VendingMachine'
+import VendingMachine from './VendingMachine';
 
 import Chips from "./Chips";
 import Soda from "./Soda";
 import Candy from "./Candy";
+import Nav from "./Nav";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Nav />
         <Routes>
           <Route path="/chips" element={<Chips />} />
           <Route path="/soda" element={<Soda />} />
